@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karim Hussein — Software Engineering Student</title>
+<meta name="description" content="Computer science engineering student in Budapest. Backend and full-stack projects in Java, Spring Boot and React, and developer tooling built with AI agents.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+
+<nav class="navbar navbar-expand-lg site-nav sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#top">
+      Karim Hussein
+      <span class="navbar-brand__role">Software engineering</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Open the menu">
+      <span class="navbar-toggler__bar"></span>
+      <span class="navbar-toggler__bar"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+        <li class="nav-item"><a class="nav-link" href="#academics">Academics</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#favourites">Off the clock</a></li>
+        <li class="nav-item"><a class="nav-link nav-link--cta" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero" id="top">
+  <div class="container">
+    <div class="row align-items-end gy-4">
+      <div class="col-lg-8">
+        <p class="hero__where">Budapest, Hungary</p>
+        <h1 class="hero__name">Karim<br>Hussein</h1>
+        <p class="hero__line">
+          Computer science engineering student, building backends in Java and Spring Boot —
+          and, lately, developer tooling that makes a rule impossible to merge past.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <dl class="hero__facts">
+          <dt>Studying</dt>
+          <dd>BSc Computer Science Engineering, University&nbsp;of&nbsp;Debrecen</dd>
+          <dt>Graduating</dt>
+          <dd>July 2027</dd>
+          <dt>Looking for</dt>
+          <dd>Software engineering roles and internships in Europe</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<section class="section section--about" id="about">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h2 class="section__title">About</h2>
+      </div>
+      <div class="col-lg-8">
+        <p class="lead-para">
+          I started my degree in Debrecen in 2023 and moved to Budapest in 2026, partly for the
+          work and partly because a bigger city gives you more to aim at.
+        </p>
+        <p>
+          Most of what I have built is server-side: authentication, data models, the parts of an
+          application that have to be right before anything else can be. Recently I have been
+          working on the other end of that — tooling that enforces a standard automatically, so a
+          team does not have to remember it. That interest came out of a hackathon and has not
+          gone away.
+        </p>
+        <p>
+          Alongside university I run my own registered business in Budapest, which has taught me
+          more about deadlines, invoicing and self-management than any course has.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--work" id="work">
+  <div class="container">
+
+    <div class="row gy-4 mb-5">
+      <div class="col-lg-4">
+        <h2 class="section__title">Work</h2>
+      </div>
+      <div class="col-lg-8">
+        <p class="section__intro">
+          University projects and a hackathon build. Where a repository is public I have linked it.
+        </p>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+
+      <div class="col">
+        <article class="project h-100">
+          <p class="project__kind">Hackathon · fourth of thirty teams</p>
+          <h3 class="project__title">EAA Gatekeeper</h3>
+          <p class="project__text">
+            A GitHub Action that checks a pull request against EU accessibility law. It scans only
+            the lines that changed and comments inline on each problem with the rule it breaks and
+            a suggested fix, then blocks the merge until the branch is clean.
+          </p>
+          <p class="project__stack">TypeScript · GitHub Actions · GitHub REST API · ESLint 9</p>
+          <a class="link-out" href="https://github.com/karim-uv/eaa-gatekeeper">Repository</a>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="project h-100">
+          <p class="project__kind">Team university project</p>
+          <h3 class="project__title">Farm2Door</h3>
+          <p class="project__text">
+            A farm-to-consumer marketplace: producers list stock, customers order directly.
+            I worked on the backend — authentication, the data model and the order flow.
+          </p>
+          <p class="project__stack">Java · Spring Boot · Spring Security with JWT · JPA / MySQL · React</p>
+          <a class="link-out" href="https://github.com/karim-uv/Farm2Door">Repository</a>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="project h-100">
+          <p class="project__kind">Solo project · top grade</p>
+          <h3 class="project__title">Movie watchlist</h3>
+          <p class="project__text">
+            An Android app for tracking films watched, rating them and writing reviews. TMDB
+            integration fills in the title, genre, synopsis and poster art automatically, so
+            adding a film takes one search.
+          </p>
+          <p class="project__stack">Java · Room / SQLite · Retrofit + Gson · Glide · MVVM with LiveData</p>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="project h-100">
+          <p class="project__kind">BSc thesis · in progress</p>
+          <h3 class="project__title">Clinic management system</h3>
+          <p class="project__text">
+            A web system for running a clinic — patients, appointments and records — supervised
+            by Dr. Vagner Anikó. Currently the largest thing I have designed from an empty
+            repository rather than joined halfway.
+          </p>
+          <p class="project__stack">React · Spring Boot · MongoDB</p>
+        </article>
+      </div>
+
+      <div class="col">
+        <article class="project h-100">
+          <p class="project__kind">Earlier</p>
+          <h3 class="project__title">Groceries web app</h3>
+          <p class="project__text">
+            A fruit and vegetable shop built with a small team for a university course —
+            accounts, filtering, a cart and order tracking. My first project with more than one
+            person committing to it.
+          </p>
+          <p class="project__stack">Full-stack web</p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--academics" id="academics">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h2 class="section__title">Academics</h2>
+        <p class="section__intro">
+          Three countries so far, and a degree that started properly in Debrecen.
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <ol class="track">
+
+          <li class="track__item">
+            <p class="track__when">From October 2021</p>
+            <h3 class="track__what">Foundation year, Malaysia</h3>
+            <p>
+              A foundation programme in science and computing, and the first time I studied
+              outside Egypt. It settled both the subject I wanted and the fact that I was willing
+              to move countries for it.
+            </p>
+          </li>
+
+          <li class="track__item">
+            <p class="track__when">September 2023 — July 2027</p>
+            <h3 class="track__what">BSc Computer Science Engineering, University of Debrecen</h3>
+            <p>
+              Full time in Hungary. The early years were C, discrete mathematics and learning to
+              study in a second language; since then, software engineering, databases and the
+              backend work that most of my projects come out of.
+            </p>
+          </li>
+
+          <li class="track__item">
+            <p class="track__when">2025</p>
+            <h3 class="track__what">Erasmus exchange, University of Milan</h3>
+            <p>
+              A semester abroad taking Master-level courses — Cloud Computing Technologies and
+              Real-Time Graphics Programming — well outside what my year had covered, which was
+              the point of going.
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--skills" id="skills">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__intro">
+          Roughly in order of how much I have actually shipped with them.
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Backend</h3>
+              <p>Java, Spring Boot, Spring Security and JWT, Spring Data JPA, MySQL, MongoDB, REST API design</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Frontend</h3>
+              <p>React, JavaScript, TypeScript, HTML, CSS and SCSS, Bootstrap, responsive layout</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Also written in</h3>
+              <p>Python, C and C++, SQL, Java for Android with Room, Retrofit and MVVM</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Tools and practice</h3>
+              <p>Git and the gh CLI, GitHub Actions, Linux, ESLint, branch protection and CI gates, working with AI coding agents</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Machine learning</h3>
+              <p>LLM application development, prompt design, the NVIDIA DLI deep learning fundamentals</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill">
+              <h3 class="skill__head">Languages</h3>
+              <p>Arabic (native), English (fluent), Hungarian (basic)</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--fav" id="favourites">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <h2 class="section__title">Off the clock</h2>
+        <p class="section__intro">
+          The things that fill the hours that are not university or work.
+        </p>
+      </div>
+      <div class="col-lg-8">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">Football</h3>
+              <p>
+                Real Madrid, for better and for worse. Watching it, arguing about it, and playing
+                badly enough that the argument is the better part.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">The gym</h3>
+              <p>
+                Structured training several times a week. It is the one part of the week that
+                does not move when a deadline appears, which is exactly why it works.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">Building things that could be a business</h3>
+              <p>
+                I keep coming back to the idea of starting something of my own rather than only
+                working on someone else's. Most of the ideas go nowhere. The habit of taking one
+                seriously enough to test it is the part I am keeping.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">Egyptian coffee and Egyptian food</h3>
+              <p>
+                Coffee ordered by sweetness rather than by size, and the food I grew up on — the
+                things I make when I want somewhere new to feel like home.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">Cities</h3>
+              <p>
+                Debrecen, then Milan for a semester, then Budapest. Moving somewhere new is the
+                fastest way I know to find out what you actually need.
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="fav">
+              <h3 class="fav__head">Hackathons</h3>
+              <p>
+                One day, a fixed deadline and no room to redesign twice. The constraint produces
+                better decisions than a month of comfortable planning does.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--contact" id="contact">
+  <div class="container">
+    <div class="row gy-4 align-items-end">
+      <div class="col-lg-7">
+        <h2 class="contact__title">Open to software engineering roles from summer 2027 — and internships before then.</h2>
+        <p class="contact__text">
+          If you are hiring, supervising, or building something and want a hand with it, the
+          fastest way to reach me is email.
+        </p>
+      </div>
+      <div class="col-lg-5">
+        <ul class="contact__list">
+          <li><span>Email</span> <a href="mailto:kimohussain6@gmail.com">kimohussain6@gmail.com</a></li>
+          <li><span>LinkedIn</span> <a href="https://www.linkedin.com/in/karim-hussain-1aa194253/">karim-hussain</a></li>
+          <li><span>GitHub</span> <a href="https://github.com/karim-uv">github.com/karim-uv</a></li>
+          <li><span>Based in</span> Budapest, Hungary</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="colophon">
+  <div class="container">
+    <p>Karim Hussein — Budapest, 2026</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
