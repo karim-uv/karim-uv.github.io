@@ -3,7 +3,7 @@
 Task 3 of the Lime Light internship programme. A responsive personal site built by rewriting the
 sample Bootstrap project from the ground up.
 
-**Live site:** https://karim-uv.github.io/karim-portfolio/
+**Live site:** https://karim-uv.github.io/
 
 ## Sections
 
